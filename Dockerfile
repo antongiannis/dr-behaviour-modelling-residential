@@ -12,7 +12,7 @@ LABEL maintainer="Ioannis Antonopoulos <anton.ioannis.phys@gmail.com>"
 RUN pip install git+https://github.com/antongiannis/phd_tools.git 
 
 # Change working directory from /tf
-RUN /bin/bash -c #(nop) rm -r *
+/bin/bash -c #(nop)  CMD ["bash" "-c" "rm -r *"]
 
 # Copy the contents of the notebook folder 
 COPY notebooks/* notebooks/

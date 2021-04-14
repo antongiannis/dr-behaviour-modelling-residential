@@ -11,12 +11,9 @@ LABEL maintainer="Ioannis Antonopoulos <anton.ioannis.phys@gmail.com>"
 # Install phdTools package which does not have a pip or conda package at the moment
 RUN pip install git+https://github.com/antongiannis/phd_tools.git 
 
-
-
-   
-
-
+# Change working directory from /tf
+/bin/bash -c #(nop) rm -r *
 
 # Copy the contents of the notebook folder 
-COPY notebooks/* /home/$NB_USER/notebooks/
+COPY notebooks/* notebooks/
 

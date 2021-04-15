@@ -5,8 +5,7 @@
 ARG BASE_CONTAINER=tensorflow/tensorflow:2.4.1-gpu-jupyter
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Ioannis Antonopoulos <anton.ioannis.phys@gmail.com>"
-
+LABEL maintainer="Ioannis Antonopoulos <ia46@hw.ac.uk>"
 
 # Install phdTools package which does not have a pip or conda package at the moment
 RUN pip install git+https://github.com/antongiannis/phd_tools.git 

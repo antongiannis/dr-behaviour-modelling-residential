@@ -14,7 +14,8 @@ RUN pip install git+https://github.com/antongiannis/phd_tools.git
 RUN pip install -U \
 pandas==1.1.5 \
 seaborn==0.11.1 \
-scikit-learn==0.24.1
+scikit-learn==0.24.1 \
+statsmodels==0.12.2
 
 # Change working directory from /tf
 RUN rm -r *

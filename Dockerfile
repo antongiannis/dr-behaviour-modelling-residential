@@ -11,7 +11,10 @@ LABEL maintainer="Ioannis Antonopoulos <ia46@hw.ac.uk>"
 RUN pip install git+https://github.com/antongiannis/phd_tools.git 
 
 # Install Python 3 packages
-RUN pip install -U scikit-learn==0.24.1
+RUN pip install -U \
+pandas==1.2.4 \
+seaborn==0.11.1 \
+scikit-learn==0.24.1
 
 
 # Change working directory from /tf

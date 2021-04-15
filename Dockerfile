@@ -18,7 +18,7 @@ scikit-learn==0.24.1
 
 
 # Change working directory from /tf and create the data directory
-RUN rm -r * && mkdir data
+RUN rm -r * && mkdir notebooks/data
 
 # Copy the contents of the notebook folder 
 COPY notebooks/* notebooks/

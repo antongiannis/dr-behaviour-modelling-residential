@@ -16,12 +16,14 @@ pandas==1.1.5 \
 seaborn==0.11.1 \
 scikit-learn==0.24.1
 
-
-# Change working directory from /tf and create the data directory
-RUN rm -r * && mkdir notebooks/data
+# Change working directory from /tf
+RUN rm -r *
 
 # Copy the contents of the notebook folder 
 COPY notebooks/* notebooks/
+
+# Create the data directory
+RUN mkdir notebooks/data
 
 # Copy the utils folder
 COPY utils/* utils/

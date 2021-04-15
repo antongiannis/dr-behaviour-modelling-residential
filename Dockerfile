@@ -12,7 +12,7 @@ RUN pip install git+https://github.com/antongiannis/phd_tools.git
 
 # Install Python 3 packages
 RUN pip install -U \
-pandas==1.2.4 \
+pandas==1.1.5 \
 seaborn==0.11.1 \
 scikit-learn==0.24.1
 

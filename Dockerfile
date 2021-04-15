@@ -10,6 +10,10 @@ LABEL maintainer="Ioannis Antonopoulos <ia46@hw.ac.uk>"
 # Install phdTools package which does not have a pip or conda package at the moment
 RUN pip install git+https://github.com/antongiannis/phd_tools.git 
 
+# Install Python 3 packages
+RUN pip install -U scikit-learn==0.24.1
+
+
 # Change working directory from /tf
 RUN rm -r *
 

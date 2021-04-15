@@ -17,8 +17,8 @@ seaborn==0.11.1 \
 scikit-learn==0.24.1
 
 
-# Change working directory from /tf
-RUN rm -r *
+# Change working directory from /tf and create the data directory
+RUN rm -r * && mkdir –p /tf/data
 
 # Copy the contents of the notebook folder 
 COPY notebooks/* notebooks/

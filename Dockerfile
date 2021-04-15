@@ -23,3 +23,5 @@ RUN rm -r * && mkdir –p /tf/data
 # Copy the contents of the notebook folder 
 COPY notebooks/* notebooks/
 
+# Copy the utils folder
+COPY utils/* utils/

@@ -1,5 +1,5 @@
 ## Repo structure
-This repository includes the python scripts and notebooks for reproducing the modelling and analysis included in the paper *Data-driven modelling of energy demand response behaviour based on a large-scale residential trial*, published in Energy & AI.
+This repository includes the python scripts and notebooks for reproducing the modelling and analysis included in the paper [*Data-driven modelling of energy demand response behaviour based on a large-scale residential trial*](https://www.sciencedirect.com/science/article/pii/S2666546821000252), published in Energy & AI.
 
 The `notebooks` directory includes the various Jupyter notebooks. The exploration notebooks need to be run first as they produce files that are used for the subsequent analysis and modelling.
 To be able to run the temporal learning notebook you need to run the `exploration-response-dataset` notebook. The modelling of demand response behaviour is in the `modelling-dr-behaviour` notebook.
